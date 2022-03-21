@@ -9,18 +9,22 @@ public class ConstructorPenOverloading {
     this.price = priceX;
   }
 
+  // single argument
   public ConstructorPenOverloading(String brandXX){
     this(brandXX, 2.99);
   }
 
+  // single argument
   public ConstructorPenOverloading(double priceXX){
     this("muji", priceXX);
   }
 
+  // no argument
   public ConstructorPenOverloading(){
     this("uniball", 1.99);
   }
 
+  // 建構子overloading設計，搭配this()讓物件屬性的初始值，更方便使用者在呼叫時的彈性
   public static void main(String[] args) {
     ConstructorPenOverloading p1 = new ConstructorPenOverloading("Hi-Tec-C");
     System.out.println(p1.brand);
