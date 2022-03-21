@@ -29,13 +29,19 @@ public class ConstructorPenOverloading {
     ConstructorPenOverloading p1 = new ConstructorPenOverloading("Hi-Tec-C");
     System.out.println(p1.brand);
     System.out.println(p1.price);
+    // Hi-Tec-C
+    // 2.99
 
     ConstructorPenOverloading p2 = new ConstructorPenOverloading(4.99);
     System.out.println(p2.brand);
     System.out.println(p2.price);
+    // muji
+    // 4.99
 
     ConstructorPenOverloading p3 = new ConstructorPenOverloading();
     System.out.println(p3.brand);
     System.out.println(p3.price);
+    // uniball
+    // 1.99
   }
 }
