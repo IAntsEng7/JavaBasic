@@ -1,4 +1,4 @@
-package Class;
+package Class.Constructor;
 
 public class ConstructorPen {
   public String brand;

@@ -1,4 +1,4 @@
-package Class;
+package Class.Constructor;
 
 public class ConstructorPenWithThis {
   // 實體變數
