@@ -10,17 +10,17 @@ public class ConstructorPenOverloading {
   }
 
   // single argument
-  public ConstructorPenOverloading(String brandXX){
+  public ConstructorPenOverloading(String brandXX) {
     this(brandXX, 2.99);
   }
 
   // single argument
-  public ConstructorPenOverloading(double priceXX){
+  public ConstructorPenOverloading(double priceXX) {
     this("muji", priceXX);
   }
 
   // no argument
-  public ConstructorPenOverloading(){
+  public ConstructorPenOverloading() {
     this("uniball", 1.99);
   }
 
@@ -29,8 +29,13 @@ public class ConstructorPenOverloading {
     ConstructorPenOverloading p1 = new ConstructorPenOverloading("Hi-Tec-C");
     System.out.println(p1.brand);
     System.out.println(p1.price);
+
     ConstructorPenOverloading p2 = new ConstructorPenOverloading(4.99);
     System.out.println(p2.brand);
     System.out.println(p2.price);
+
+    ConstructorPenOverloading p3 = new ConstructorPenOverloading();
+    System.out.println(p3.brand);
+    System.out.println(p3.price);
   }
 }
