@@ -19,8 +19,13 @@ public class Elephant extends Animal {
   public static void main(String[] args) {
     Animal animal = new Animal(3, 8.7f);
     animal.speak();
+    // 3
+    // 8.7
 
     Elephant elephant = new Elephant(8, 1230.4f, "Elephant");
     elephant.speak();
+    // 8
+    // 1230.4
+    // Animal Name is : Elephant
   }
 }
