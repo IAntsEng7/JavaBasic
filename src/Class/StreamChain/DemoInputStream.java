@@ -12,12 +12,12 @@ public class DemoInputStream {
     int charCount = 0;
     int print;
     while ((print = fileReader.read()) != -1) {
-      System.out.print((char) print); // 印出DemoInputStream.txt的內容
+//      System.out.print((char) print); // 印出DemoInputStream.txt的內容
       charCount++;
     }
     fileReader.close();
 
-    // 暫時不清楚為什麼兩個FileReader一起跑的時候，上面的會被截斷...
+    // 暫時不清楚為什麼兩個FileReader一起跑的時候，上面的列印會被截斷...
 
     FileReader fileReader2 = new FileReader(file);
     BufferedReader bufferedReader = new BufferedReader(fileReader2);
